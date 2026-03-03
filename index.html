@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Laugh And Learn Pre-School</title>
-  <meta name="description" content="Laugh And Learn Pre-School is a premier institution dedicated to excellence in education, nurturing bright little minds and building future leaders." />
+  <meta name="description"
+    content="Laugh And Learn Pre-School is a premier institution dedicated to excellence in education, nurturing bright little minds and building future leaders." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
   <!-- ========== NAVBAR ========== -->
@@ -47,7 +52,8 @@
         <span class="hero-accent">Your Future</span>
       </h1>
       <p class="hero-desc animate-fade-up delay-2">
-        Where knowledge ignites passion and learning transforms lives. Join a legacy of academic brilliance, values, and holistic growth.
+        Where knowledge ignites passion and learning transforms lives. Join a legacy of academic brilliance, values, and
+        holistic growth.
       </p>
       <div class="hero-buttons animate-fade-up delay-3">
         <a href="#admissions" class="btn btn-primary">Apply Now</a>
@@ -74,7 +80,10 @@
           <span class="section-tag">About Us</span>
           <h2 class="section-title">A Legacy of <span class="highlight">Brilliance</span></h2>
           <p class="about-text">
-            Founded in 1995, Laugh And Learn Pre-School has been a beacon of educational excellence, shaping the minds and characters of over 15,000 alumni who now lead across the globe. We believe education is more than academics—it's about igniting curiosity, building character, and empowering every student to reach their highest potential.
+            Founded in 1995, Laugh And Learn Pre-School has been a beacon of educational excellence, shaping the minds
+            and characters of over 15,000 alumni who now lead across the globe. We believe education is more than
+            academics—it's about igniting curiosity, building character, and empowering every student to reach their
+            highest potential.
           </p>
           <div class="about-pillars">
             <div class="pillar">
@@ -295,7 +304,8 @@
           <div class="event-content">
             <span class="event-tag">Annual Day</span>
             <h3>Laugh And Learn PreSchool Annual Day 2026 — "Echoes of Excellence"</h3>
-            <p>Join us for a spectacular celebration of student talent, achievements, and milestones with performances, awards, and more.</p>
+            <p>Join us for a spectacular celebration of student talent, achievements, and milestones with performances,
+              awards, and more.</p>
             <a href="#contact" class="event-link">Read More →</a>
           </div>
         </div>
@@ -410,35 +420,35 @@
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Your first name" required />
+              <input type="text" id="fname" name="first_name" placeholder="Your first name" required />
             </div>
             <div class="form-group">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Your last name" required />
+              <input type="text" id="lname" name="last_name" placeholder="Your last name" required />
             </div>
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="you@example.com" required />
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
           </div>
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" placeholder="+91 00000 00000" />
+            <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" />
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <select id="subject">
+            <select id="subject" name="subject">
               <option value="">Select a topic</option>
-              <option>General Enquiry</option>
-              <option>Admissions</option>
-              <option>Fee Structure</option>
-              <option>Campus Visit</option>
-              <option>Other</option>
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Admissions">Admissions</option>
+              <option value="Fee Structure">Fee Structure</option>
+              <option value="Campus Visit">Campus Visit</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Tell us how we can help..." required></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message ✉️</button>
           <div class="form-success" id="formSuccess">✅ Thank you! We'll get back to you within 24 hours.</div>
@@ -500,4 +510,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

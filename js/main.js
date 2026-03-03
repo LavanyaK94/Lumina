@@ -109,8 +109,9 @@ const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 const submitBtn = document.getElementById('submitBtn');
 
-// ⚠️ Replace with your Web3Forms access key from https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY_HERE';
+// ⚠️ GET YOUR FREE FORM ID FROM https://formspree.io
+// Once you have it, replace 'YOUR_FORM_ID_HERE' with your actual ID
+const FORMSPREE_ID = 'xlgwyvbe';
 
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -142,7 +143,6 @@ contactForm.addEventListener('submit', async (e) => {
     const message = document.getElementById('message').value.trim();
 
     const formData = {
-        access_key: WEB3FORMS_ACCESS_KEY,
         subject: `New Contact Form: ${subject || 'General Enquiry'} — Laugh And Learn Pre-School`,
         name: `${fname} ${lname}`,
         email: email,
@@ -152,7 +152,7 @@ contactForm.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify(formData)
