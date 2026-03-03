@@ -158,15 +158,15 @@ contactForm.addEventListener('submit', async (e) => {
             body: JSON.stringify(formData)
         });
 
-        const result = await response.json();
-
-        if (result.success) {
+        if (response.ok) {
             contactForm.reset();
             formSuccess.textContent = '✅ Thank you! We\'ll get back to you within 24 hours.';
             formSuccess.style.background = 'rgba(34, 197, 94, 0.1)';
             formSuccess.style.borderColor = 'rgba(34, 197, 94, 0.3)';
             formSuccess.style.color = '#16a34a';
         } else {
+            const result = await response.json();
+            console.error('Formspree Error:', result);
             formSuccess.textContent = '❌ Oops! Something went wrong. Please try again.';
             formSuccess.style.background = 'rgba(239, 68, 68, 0.1)';
             formSuccess.style.borderColor = 'rgba(239, 68, 68, 0.3)';
